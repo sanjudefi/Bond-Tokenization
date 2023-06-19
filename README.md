@@ -4,14 +4,23 @@
 The Bond struct represents a bond with the following properties:
 
 `principal`: The principal amount of the bond.
+
 `couponRate`: The coupon rate of the bond.
+
 `maturity`: The maturity date of the bond.
+
 `couponFrequency`: The frequency at which coupon payments are made.
+
 `issuer`: The address of the bond issuer.
+
 `whitelist`: A mapping of addresses to check if they are whitelisted investors.
+
 `kycApproved`: A mapping of addresses to check if they have passed KYC.
+
 `highRiskCustomers`: A mapping of addresses to check if they are high-risk customers.
+
 `couponPayments`: A mapping of addresses to track the coupon payments made to investors.
+
 
 # Constructor
 The constructor initializes the bond with default values. You can set the initial values according to your requirements.
