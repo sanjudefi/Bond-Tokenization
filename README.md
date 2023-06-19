@@ -1,8 +1,8 @@
 # Bond Tokenization Smart Contract
 
 # Bond Struct
-
-`struct Bond {
+```solidity
+struct Bond {
     uint256 principal;
     uint256 couponRate;
     uint256 maturity;
@@ -12,7 +12,7 @@
     mapping(address => bool) kycApproved;
     mapping(address => bool) highRiskCustomers;
     mapping(address => uint256) couponPayments;
-}`
+}
 
 The Bond struct represents a bond with the following properties:
 
