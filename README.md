@@ -9,6 +9,19 @@ This smart contract implements the functionality for tokenizing a bond on the Et
 - The contract supports functionalities such as adding investors to the whitelist, approving KYC, adding high-risk customers, paying coupon, repaying principal, and settling the bond.
 - Only the issuer can perform certain actions, and investors must be whitelisted and KYC-approved to participate.
 
+## Bond Struct
+# The Bond struct represents a bond with the following properties:
+
+`principal:` The principal amount of the bond.
+`couponRate:` The coupon rate of the bond.
+`maturity:` The maturity date of the bond.
+`couponFrequency:` The frequency at which coupon payments are made.
+`issuer:` The address of the bond issuer.
+`whitelist:` A mapping of addresses to check if they are whitelisted investors.
+`kycApproved:` A mapping of addresses to check if they have passed KYC.
+`highRiskCustomers:` A mapping of addresses to check if they are high-risk customers.
+`couponPayments:` A mapping of addresses to track the coupon payments made to investors.
+
 ## Contract Functions
 
 ### `addToWhitelist(address investor)`
