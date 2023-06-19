@@ -12,7 +12,7 @@ struct Bond {
     mapping(address => bool) kycApproved;
     mapping(address => bool) highRiskCustomers;
     mapping(address => uint256) couponPayments;
-}```solidity
+}```
 
 The Bond struct represents a bond with the following properties:
 
